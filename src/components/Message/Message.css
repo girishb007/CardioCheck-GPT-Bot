@@ -1,0 +1,116 @@
+/* Extra styles for HTML within a message */
+
+.message-text h1,
+.message-text h2,
+.message-text h3,
+.message-text h4,
+.message-text h5,
+.message-text h6 {
+  line-height: 1.4;
+  margin: 0.5em auto;
+}
+
+/* Apply some sizing to headings, use Minor Second (1.067) https://typescale.com/ */
+.message-text h1 {
+  font-size: 1.383em;
+}
+.message-text h2 {
+  font-size: 1.296em;
+}
+.message-text h3 {
+  font-size: 1.215em;
+}
+.message-text h4 {
+  font-size: 1.138em;
+}
+.message-text h5 {
+  font-size: 1.067em;
+}
+.message-text h6 {
+  font-size: 1em;
+}
+
+.message-text p {
+  margin-bottom: 0.5em;
+  line-height: 1.6;
+}
+
+.message-text ul,
+.message-text ol {
+  margin: 0;
+  padding: 0.5em 1.5em;
+}
+
+.message-text blockquote {
+  border-left: 4px solid #0096bfab;
+  margin: 1.5em 0em;
+  padding: 0.5em 1em;
+  font-style: italic;
+}
+
+.message-text kbd {
+  padding: 5px;
+  border-radius: 6px;
+}
+
+/* Wrap inline code in backticks and make bold */
+.message-text .inline-code::before {
+  content: "`";
+  font-size: 0.9em;
+}
+.message-text .inline-code {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.message-text .inline-code::after {
+  content: "`";
+  font-size: 0.9em;
+}
+
+.message-text pre {
+  margin: 0.5em auto;
+}
+
+.message-text pre code {
+  font-size: 0.95em;
+  max-width: 100%;
+  white-space: pre-wrap !important;
+  overflow-wrap: break-word;
+}
+
+.linenumber {
+  display: inline-block;
+  padding-left: 0.5em;
+  font-style: italic;
+}
+
+/* Force the line numbers to be lighter gray in highlight.js styles */
+.chakra-ui-light .linenumber {
+  color: rgb(160, 161, 167);
+}
+.chakra-ui-dark .linenumber {
+  color: rgb(92, 99, 112);
+}
+
+.message-text img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.message-text table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.message-text th,
+.message-text td {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.message-text a {
+  text-decoration: underline;
+}
